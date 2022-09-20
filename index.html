@@ -8,34 +8,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Staatliches&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/estilo.css">
     <title>Air Fix</title>
 </head>
 <body>
-    <header class="df-navbar">
-        <div><img class="logo" src="./img/af.img.png" alt="Foto de perfil"></div>
-        <h2 class="titulo">
-            Servicio Técnico
-        </h2>
-        <nav>
-            <ul class="menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./noticias.html">Noticias</a></li>
-                <li><a href="./ubicacion.html">Ubicación</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div><img class="logo" src="./img/af.img.png" alt="Foto de perfil" id="arriba"></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="menu">
+                    <div class="menu menu navbar-nav collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link active" href="./servicios.html">Servicios</a>
+                            <a class="nav-link active" href="./productos.html">Productos</a>
+                            <a class="nav-link active" href="./noticias.html">Noticias</a>
+                            <a class="nav-link active" href="./ubicacion.html">Ubicación</a>
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
+                    </div>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <section>
-            <div class="center"><img class="micro" src="./img/home.png" alt="micro"></div>
+            <div class="center"><img class="img-fluid" src="./img/home.png" alt="micro"></div>
         </section>
         <section>
             <h2 class="subtitus">Quienes Somos</h2>
-            <p class="pf">
+            <p class="pf lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sunt animi nesciunt vero veniam
                 laborum, libero porro. Optio iusto doloremque repellendus consequuntur! Blanditiis repudiandae rerum
                 assumenda sapiente molestiae qui excepturi! Laboriosam, natus explicabo sapiente iure perferendis labore
@@ -59,13 +66,16 @@
         </section>
     </main>
     <footer class="df-footer bg-footer">
-        <h3 class="text-white">Hecho por Lautaro Silenzi</h3>
+        <h3 class="footer-t text-white">Hecho por Lautaro Silenzi</h3>
         <div class="redes">
             <a href="https://www.instagram.com/air.fix/" target="_blank"><i class="fa fa-instagram text-white"></i></a>
-            <a href=""><i class="fa fa-whatsapp text-white"></i></a>
+            <a href="https://walink.co/ca7540"><i class="fa fa-whatsapp text-white"></i></a>
             <a href="https://www.google.com.ar/" target="_blank"><i class="fa fa-google text-white"></i></a>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/71405dd8ce.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({   easing: 'ease-out-back',duration: 2000 }) </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
