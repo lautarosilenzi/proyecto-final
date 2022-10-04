@@ -1,0 +1,37 @@
+/* FOOTER */
+footer{
+    .bg-footer{
+        background-color: #010000;
+        padding: 10px;
+        height: 60px;
+    }
+    
+    .df-footer{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+    }
+    .redes a i {
+        font-size: 25px;
+        text-align: center;
+        padding: 5px 10px;
+        &:hover {
+            color: rgb(211, 78, 126) ;
+            transform: rotateY(360deg) ;
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -webkit-transform: rotateY(360deg) ;
+            -moz-transform: rotateY(360deg) ;
+            -ms-transform: rotateY(360deg) ;
+            -o-transform: rotateY(360deg) ;
+        }
+    }
+    .footer-t{
+        font-size: medium;
+    }
+
+}
+

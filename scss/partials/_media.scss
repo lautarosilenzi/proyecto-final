@@ -1,0 +1,38 @@
+/* MEDIA */
+
+@media only screen and (min-width:992px) {
+    .gridcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: min-content min-content min-content min-content min-content min-content;
+        grid-template-areas:
+            "titulo titulo"
+            "parrafo img"
+            "parrafo img"
+            "boton ..."
+            "subtitulo subtitulo"
+            "img2 img2";}
+
+    }
+
+    
+
+
+@media only screen and (min-width:576px) {
+    .gridcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, min-content);
+        grid-template-areas:
+        "titulo"
+        "img"
+        "parrafo"
+        "parrafo"
+        "boton"
+        "subtitulo"
+        "img2";}
+    }

@@ -1,0 +1,37 @@
+header{
+    .navbar{
+        height: 60px;
+        width: 100%;
+    }
+    .black{
+        background-color: #010000;
+    }
+    .logo {
+        width: 100px;
+        padding: 0.2rem;
+        margin: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu {
+        text-align: center;
+        list-style-type: none;
+        margin: 10px;
+        .div a:hover {
+            color: rgb(211, 78, 126);
+            font-weight: bold;
+        }
+    }
+    .titulo {
+        text-align: left;
+        color: rgb(255, 255, 255);
+        padding: 2px;
+        font-family: 'Staatliches', cursive;
+        font-size: large;
+    }
+
+}
+
+
+

@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: rgb(255, 255, 255);
+}
+
+h2{
+    background-color: rgb(222, 222, 222);
 }
 
 /* HEADER */
@@ -154,7 +157,7 @@ body {
 
 .nuevos {
     width: 280px;
-    border: 5px double rgb(0, 0, 0);
+    border: 5px double #000000;
     opacity: .6;
     margin-bottom: 30px;
     margin-left: 10px;

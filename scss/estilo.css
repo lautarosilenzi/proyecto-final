@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .navbar {
+  height: 60px;
+  width: 100%;
+}
+header .black {
+  background-color: #010000;
+}
+header .logo {
+  width: 100px;
+  padding: 0.2rem;
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .menu {
+  text-align: center;
+  list-style-type: none;
+  margin: 10px;
+}
+header .menu .div a:hover {
+  color: rgb(211, 78, 126);
+  font-weight: bold;
+}
+header .titulo {
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding: 2px;
+  font-family: "Staatliches", cursive;
+  font-size: large;
+}
+
+/* MAIN HOME */
+main .subtitus {
+  text-align: center;
+  color: #010000;
+  padding: 10px;
+  margin: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: larger;
+}
+main .pf {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+  line-height: 2;
+  margin: 15px;
+  border: rgb(0, 0, 0) inset 3px;
+}
+main .imagenes2 {
+  width: 160px;
+  padding: 3px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 3px inset rgb(0, 0, 0);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+main .imagenes2:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+/* MAIN SERVICIOS */
+main .video {
+  align-content: left;
+  border: 3px inset rgb(0, 0, 0);
+  padding: 3px;
+  border-width: 3px;
+  margin: 15px;
+}
+
+/*MAIN NOTICIAS*/
+main .gridcontainer {
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content min-content min-content min-content;
+  grid-template-areas: "titulo titulo img" "parrafo parrafo img" "boton ...     img" "subtitulo subtitulo subtitulo" "img2 img2 img2";
+  width: 70%;
+  margin: 10% auto;
+}
+main .gridcontainer h3 {
+  grid-area: titulo;
+  font-size: 3rem;
+}
+main .gridcontainer p {
+  grid-area: parrafo;
+}
+main .gridcontainer .vertical {
+  grid-area: img;
+  width: 100%;
+}
+main .gridcontainer h4 {
+  grid-area: subtitulo;
+  text-align: center;
+  font-size: 3rem;
+  margin: auto;
+}
+main .gridcontainer .horizontal {
+  grid-area: img2;
+  width: 70%;
+  margin: auto;
+}
+main .pnovedades {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  justify-content: left;
+}
+main .nuevos {
+  width: 280px;
+  border: 5px double #000000;
+  opacity: 0.6;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  padding: 5px;
+}
+main .nuevos:hover {
+  opacity: 1;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+/* FOOTER */
+footer .bg-footer {
+  background-color: #010000;
+  padding: 10px;
+  height: 60px;
+}
+footer .df-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .redes a i {
+  font-size: 25px;
+  text-align: center;
+  padding: 5px 10px;
+}
+footer .redes a i:hover {
+  color: rgb(211, 78, 126);
+  transform: rotateY(360deg);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+}
+footer .footer-t {
+  font-size: medium;
+}
+
+main .contacto {
+  width: 150px;
+  padding: 15px;
+  margin: 10px;
+}
+main fieldset {
+  background-color: rgb(215, 218, 218);
+  margin: 25px;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.rght {
+  text-align: right;
+}
+
+.text-white {
+  color: rgb(255, 255, 255);
+}
+
+.titulogo {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* MEDIA */
+@media only screen and (min-width: 992px) {
+  .gridcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content;
+    grid-template-areas: "titulo titulo" "parrafo img" "parrafo img" "boton ..." "subtitulo subtitulo" "img2 img2";
+  }
+}
+@media only screen and (min-width: 576px) {
+  .gridcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, -webkit-min-content);
+    grid-template-rows: repeat(6, min-content);
+    grid-template-areas: "titulo" "img" "parrafo" "parrafo" "boton" "subtitulo" "img2";
+  }
+}/*# sourceMappingURL=estilo.css.map */

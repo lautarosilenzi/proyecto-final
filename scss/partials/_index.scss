@@ -1,0 +1,43 @@
+/* MAIN HOME */
+main{
+    .subtitus {
+        text-align: center;
+        color: #010000;
+        padding: 10px;
+        margin: 20px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: larger;
+    }
+    .pf {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 15px;
+        line-height: 2;
+        margin: 15px;
+        border: rgb(0, 0, 0) inset 3px;
+    }
+    .imagenes2 {
+        width: 160px;
+        padding: 3px;
+        margin: 10px;
+        border-radius: 50%;
+        border: 3px inset rgb(0, 0, 0);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        &:hover{
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+        }
+    }
+}
+
+
