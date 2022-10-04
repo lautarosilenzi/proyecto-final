@@ -1,0 +1,30 @@
+@mixin sections ($bg) {
+    background-color: $bg;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    &__titulo{
+        text-align: center;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    &__texto{
+        color: white;
+        line-height: 2;
+        padding: 1rem;
+    }
+}
+
+.main{
+    .section1{
+        @include sections($Azul)
+    }
+    .section2{
+        @include sections($Rojo)
+    }
+    .section3{
+        @include sections($Verde)
+    }
+}
