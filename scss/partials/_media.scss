@@ -15,6 +15,22 @@
             "subtitulo subtitulo"
             "img2 img2";}
 
+        .navbar{
+        display: flex;
+        flex-direction: column;
+        }
+
+        .subtitus{
+            display: flex;
+            flex-direction: column;
+            }
+
+        .pf{
+            display: flex;
+            flex-direction: column;
+        }
+        
+
     }
 
     
@@ -35,4 +51,24 @@
         "boton"
         "subtitulo"
         "img2";}
+
+        .navbar{
+            display: flex;
+            flex-direction: column;
+            }
+        
+        .subtitus{
+            display: flex;
+            flex-direction: column;
+            }
+        
+        .pf{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contacto{
+            display: flex;
+            flex-direction: column;
+        }
     }
