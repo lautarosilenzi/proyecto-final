@@ -12,7 +12,7 @@ header .black {
   background-color: #000000;
 }
 header .logo {
-  width: 100px;
+  width: 150px;
   padding: 0.2rem;
   margin: 40px;
   display: flex;
@@ -86,7 +86,6 @@ main .imagenes2:hover {
 
 /* MAIN SERVICIOS */
 main .video {
-  align-content: left;
   border: 3px inset rgb(0, 0, 0);
   padding: 3px;
   border-width: 3px;
@@ -157,8 +156,11 @@ main .nuevos:hover {
 }
 
 /* FOOTER */
-footer .bg-footer {
+footer{
   background-color: #000000;
+}
+footer .bg-footer {
+  background-color: #0a0000;
   padding: 10px;
   height: 60px;
 }
@@ -271,4 +273,5 @@ main fieldset {
     display: flex;
     flex-direction: column;
   }
-}/*# sourceMappingURL=estilo.css.map */
+}
+/*# sourceMappingURL=estilo.css.map */
